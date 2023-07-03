@@ -1,0 +1,153 @@
+2023-05-05 10:43:41,861 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer, Timeout: 15.0s, Topology Description: <TopologyDescription id: 6454b39ec47b913ebd69a1a1, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>]>
+2023-05-05 10:44:12,923 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer, Timeout: 15.0s, Topology Description: <TopologyDescription id: 6454b3bd23c42767cde3bd92, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>]>
+2023-05-05 10:45:05,332 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: connection closed,ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer, Timeout: 15.0s, Topology Description: <TopologyDescription id: 6454b3f2c0086097afac67dd, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: connection closed',)>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>]>
+2023-06-21 00:33:28,578 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer, Timeout: 15.0s, Topology Description: <TopologyDescription id: 64921b196962d314b01bcf80, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>]>
+2023-06-21 00:34:41,226 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer, Timeout: 15.0s, Topology Description: <TopologyDescription id: 64921b62610c986023ff9e79, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>]>
+2023-06-21 00:35:32,359 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer, Timeout: 15.0s, Topology Description: <TopologyDescription id: 64921b95e76d797ee429b963, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>]>
+2023-06-21 00:36:16,127 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer,ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: connection closed,ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer, Timeout: 15.0s, Topology Description: <TopologyDescription id: 64921bc06d7292abfdfe20da, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net:27017: connection closed',)>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net:27017: [Errno 104] Connection reset by peer',)>]>
+2023-06-22 01:04:22,396 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: No replica set members found yet, Timeout: 15.0s, Topology Description: <TopologyDescription id: 649373d75f9f950b05a50504, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None>]>
+2023-06-22 01:05:37,208 | mongo_database.py(36) | ERROR | Failed to connect to MongoDB database.
+Traceback (most recent call last):
+  File "/home/andrei/Desktop/Licenta/SCSS/order_tracking/order_tracking/database/mongo_database.py", line 33, in connect
+    self.client.admin.command('ismaster')
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/database.py", line 721, in command
+    with self.__client._socket_for_reads(read_preference, session) as (
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1235, in _socket_for_reads
+    server = self._select_server(read_preference, session)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1196, in _select_server
+    server = topology.select_server(server_selector)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 251, in select_server
+    servers = self.select_servers(selector, server_selection_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 212, in select_servers
+    server_descriptions = self._select_servers_loop(selector, server_timeout, address)
+  File "/home/andrei/miniconda3/envs/licenta/lib/python3.6/site-packages/pymongo/topology.py", line 229, in _select_servers_loop
+    % (self._error_message(selector), timeout, self.description)
+pymongo.errors.ServerSelectionTimeoutError: No replica set members found yet, Timeout: 15.0s, Topology Description: <TopologyDescription id: 6493742203ee34b4c157b509, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-eoh0mev-shard-00-00.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-eoh0mev-shard-00-01.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-eoh0mev-shard-00-02.266ghn4.mongodb.net', 27017) server_type: Unknown, rtt: None>]>
